@@ -1,5 +1,7 @@
 # magic-optimizer
-Optimizes your images for the web using (Image)Magic(k).
+Optimizes your images for the web using Magic! ✨✨✨
+
+(ImageMagick, that is.)
 
 ## Installation
 Installation and running is fairly straightforward, even if you aren't familiar with Python.
@@ -30,11 +32,13 @@ Should be self-explanatory, I'll add more details about usage later. (TODO)
 - [ ] Use CLI args instead of stdin (e.g., `python optim.py --input 'sample_image.jpg' --formats jpeg avif png --qualities 0.5 1 2 --output ~/Pictures/web_safe`)
   - [ ] Gooey for GUI?
 - [ ] Use proper ImageMagick python library instead of subprocess
+  - [ ] Set up requirements.txt to download the library
 - [ ] Move global variables to a `config.txt` file
   - [ ] Also include other stuff, like allowing for skip-input-check (program may crash since ImageMagick may not like your input file type), changing rounding in elapsed time in terminal output
 - [ ] Maybe separate into multiple files where applicable?
 - [ ] Add license
 - [ ] Set up actions to release a .zip file to simplify installation process
+  - [ ] Or set up (shell? py?) scripts for Windows, Macos, Linux installation that basically just uses a package manager or similar to install dependencies, including git, and run the git clone
 
 ## Modification
 It is possible to modify the code to make it work more to certain needs:
