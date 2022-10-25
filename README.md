@@ -29,7 +29,9 @@ Should be self-explanatory, I'll add more details about usage later. (TODO)
 - [ ] Fix TODOs in `optim.py`
 - [ ] Use CLI args instead of stdin (e.g., `python optim.py --input 'sample_image.jpg' --formats jpeg avif png --qualities 0.5 1 2 --output ~/Pictures/web_safe`)
   - [ ] Gooey for GUI?
+- [ ] Use proper ImageMagick python library instead of subprocess
 - [ ] Move global variables to a `config.txt` file
+  - [ ] Also include other stuff, like allowing for skip-input-check (program may crash since ImageMagick may not like your input file type), changing rounding in elapsed time in terminal output
 - [ ] Maybe separate into multiple files where applicable?
 - [ ] Add license
 - [ ] Set up actions to release a .zip file to simplify installation process
@@ -37,11 +39,11 @@ Should be self-explanatory, I'll add more details about usage later. (TODO)
 ## Modification
 It is possible to modify the code to make it work more to certain needs:
 - Allowing odd file types (like `.pdf`) to be converted to images
-  - TODO: Explain how
+  - TODO: Explain how (maybe after setting up `config.txt` file)
 - probably others
   - TODO: Add more
 
-Of course, I can't provide support
+Of course, I can't provide support if you modify the files!
 
 ## Usage as a Library
 It's not recommended, but `optim.py` is designed to be able to be used by other python scripts with few issues. If you're encountering errors, I can't guarantee that I will provide support, but feel free to open a GitHub Issue and describe your problem. I'd like to make this the best program I possibly can
